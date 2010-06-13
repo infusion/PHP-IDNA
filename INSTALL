@@ -1,0 +1,14 @@
+Installing from sources
+
+   1. Install libidn (apt-get install libidn11-dev)
+   2. Unpack idna source package
+   3. Go to idna folder and type "phpize && ./configure && make && make install"
+   4. Make sure you have extension=idna.so in your php.ini
+
+Compiling IDNA into PHP
+
+   1. Install libidn (apt-get install libidn11-dev)
+   2. Unpack idna source package to $PHP_SOURCE_DIR/ext/idna
+   3. In php source root directory run commands: "rm configure && ./buildconf --force"
+   4. Configure PHP with command "./configure --with-idna"
+   5. Run make && make install
