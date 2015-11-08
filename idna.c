@@ -24,7 +24,7 @@
 #include <stringprep.h>
 #include <idna.h>
 
-static function_entry idna_functions[] = {
+static zend_function_entry idna_functions[] = {
     PHP_FE(idna_toascii, NULL)
     PHP_FE(idna_tounicode, NULL)
     {NULL, NULL, NULL}
